@@ -67,7 +67,73 @@
 
     .button:hover {
       background: rgba(255,255,255,.12);
-    }
+    }.collections {
+  padding: 7rem 8%;
+  background: #f7f2ea;
+}
+
+.section-intro {
+  max-width: 760px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.eyebrow {
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  font-size: .8rem;
+  color: #5d6b57;
+}
+
+.section-intro h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.collection-grid article {
+  background: #fffaf3;
+  padding: 1rem;
+  border: 1px solid rgba(47,43,44,.12);
+  box-shadow: 0 20px 60px rgba(47,43,44,.08);
+}
+
+.collection-grid img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  display: block;
+}
+
+.collection-grid h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin: 1rem 0 .25rem;
+}
+
+.collection-grid p {
+  color: #5b5552;
+  line-height: 1.7;
+}
+
+@media (max-width: 850px) {
+  .collection-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-grid img {
+    height: auto;
+  }
+}
   </style>
 </head>
 
@@ -99,6 +165,31 @@
 
   </div>
 </section>
+<section class="collections">
+  <div class="section-intro">
+    <p class="eyebrow">Collections</p>
+    <h2>Paintings gathered by mood, myth, and memory.</h2>
+  </div>
 
+  <div class="collection-grid">
+    <article>
+      <img src="assets/artwork/split.jpg" alt="Woman and wolf duality painting">
+      <h3>Wild Souls</h3>
+      <p>Wolves, foxes, guardians, and the animal spirit within.</p>
+    </article>
+
+    <article>
+      <img src="assets/artwork/cherry blossoms.jpg" alt="Cherry blossoms by water">
+      <h3>Moon Garden</h3>
+      <p>Flowers, moonlight, bees, butterflies, and quiet wonder.</p>
+    </article>
+
+    <article>
+      <img src="assets/artwork/dancers.jpg" alt="Romantic masked dancers painting">
+      <h3>Myth & Memory</h3>
+      <p>Romance, fantasy, transformation, and emotional story.</p>
+    </article>
+  </div>
+</section>
 </body>
 </html>
