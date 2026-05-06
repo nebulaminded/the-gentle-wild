@@ -133,10 +133,51 @@
   .collection-grid img {
     height: auto;
   }
+}.poetry-interlude {
+  min-height: 70vh;
+  background-image:
+    linear-gradient(rgba(47,43,44,.55), rgba(47,43,44,.65)),
+    url('assets/artwork/cherry blossoms.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 8%;
+}
+
+.poem-text {
+  max-width: 760px;
+  color: white;
+  text-align: center;
+}
+
+.poem-text p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 5vw, 4.2rem);
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.poem-text span {
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  font-size: .78rem;
+  opacity: .85;
 }
   </style>
 </head>
-
+<section class="poetry-interlude">
+  <div class="poem-text">
+    <p>
+      “Each stroke is a decision,<br>
+      each color a memory of light,<br>
+      each shadow a knowing<br>
+      that darkness is never empty.”
+    </p>
+    <span>— from Lisa’s poetry archive</span>
+  </div>
+</section>
 <body>
 
 <nav class="nav">
