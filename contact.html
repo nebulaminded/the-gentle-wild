@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact | The Gentle Wild</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+
+    body {
+      margin: 0;
+      background: #f7f2ea;
+      color: #2f2b2c;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.8;
+    }
+
+    .nav {
+      padding: 1.5rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #211f1f;
+    }
+
+    .logo {
+      color: white;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      letter-spacing: .12em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-size: .8rem;
+    }
+
+    .hero {
+      padding: 8rem 8% 4rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(4rem, 8vw, 7rem);
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+
+    .intro {
+      max-width: 760px;
+      margin: auto;
+      color: #5a5552;
+    }
+
+    .contact-section {
+      max-width: 760px;
+      margin: 0 auto 8rem;
+      padding: 3rem;
+      background: #fffaf3;
+      box-shadow: 0 20px 60px rgba(47,43,44,.08);
+    }
+
+    .contact-section h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3rem;
+      font-weight: 400;
+      margin-top: 0;
+    }
+
+    .contact-section p {
+      color: #5a5552;
+      margin-bottom: 2rem;
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid rgba(47,43,44,.15);
+      background: #fdf9f2;
+      font-family: inherit;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      min-height: 180px;
+      resize: vertical;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      border: none;
+      background: #2f2b2c;
+      color: white;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      width: fit-content;
+    }
+
+    .footer {
+      padding: 2rem;
+      text-align: center;
+      background: #211f1f;
+      color: rgba(255,255,255,.65);
+    }
+
+    @media (max-width: 850px) {
+
+      .nav {
+        flex-direction: column;
+        gap: .75rem;
+        padding: 1.25rem 1rem;
+        text-align: center;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      h1 {
+        line-height: .95;
+      }
+
+      .contact-section {
+        margin: 0 1rem 6rem;
+        padding: 2rem;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav">
+
+    <div class="logo">
+      The Gentle Wild
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="poetry.html">Poetry</a>
+      <a href="collections.html">Collections</a>
+    </div>
+
+  </nav>
+
+  <section class="hero">
+
+    <h1>Contact</h1>
+
+    <p class="intro">
+      For commissions, collaborations, print inquiries,
+      or simply to share a kind word from the woods.
+    </p>
+
+  </section>
+
+  <section class="contact-section">
+
+    <h2>Send a Message</h2>
+
+    <p>
+      The Gentle Wild welcomes thoughtful inquiries regarding
+      original artwork, commissions, exhibitions,
+      poetry collaborations, and print availability.
+    </p>
+
+    <form class="contact-form">
+
+      <input type="text" placeholder="Your Name">
+
+      <input type="email" placeholder="Your Email">
+
+      <textarea placeholder="Your Message"></textarea>
+
+      <button type="submit">
+        Send
+      </button>
+
+    </form>
+
+  </section>
+
+  <footer class="footer">
+    © The Gentle Wild — Lisa Trexler-Fallon
+  </footer>
+
+</body>
+</html>
