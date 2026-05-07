@@ -30,7 +30,14 @@
     .note { max-width: 850px; margin: 0 auto 7rem; padding: 3rem; background: #fffaf3; text-align: center; box-shadow: 0 20px 60px rgba(47,43,44,.08); }
 
     .footer { padding: 2rem; text-align: center; background: #211f1f; color: rgba(255,255,255,.65); }
+.footer a {
+  color: rgba(255,255,255,.75);
+  text-decoration: none;
+}
 
+.footer a:hover {
+  color: white;
+}
     @media (max-width: 900px) {
       .shop-grid { grid-template-columns: 1fr; }
       .nav { flex-direction: column; gap: .75rem; padding: 1.25rem 1rem; text-align: center; }
@@ -95,7 +102,13 @@
   </section>
 
   <footer class="footer">
-    © The Gentle Wild — Lisa Trexler-Fallon
-  </footer>
+  <p>© The Gentle Wild — Lisa Trexler-Fallon</p>
+
+  <p>
+    <a href="#">Instagram</a> ·
+    <a href="#">Pinterest</a> ·
+    <a href="#">Contact</a>
+  </p>
+</footer>
 </body>
 </html>
