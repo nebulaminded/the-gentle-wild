@@ -1,12 +1,9 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>TEST WEBSITE</title>
+  <title>The Gentle Wild | Lisa Trexler-Fallon</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -19,12 +16,52 @@
       font-family: 'Inter', sans-serif;
     }
 
+    .nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 1rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,.2);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+      box-sizing: border-box;
+    }
+
+    .logo {
+      color: white;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      letter-spacing: .12em;
+    }
+
+    .logo img {
+      height: 72px;
+      width: auto;
+      display: block;
+      filter: brightness(0) invert(1);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-size: .8rem;
+    }
+
     .hero {
       height: 100vh;
       background-image:
         linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.45)),
         url('assets/artwork/moonlight fox.jpg');
-
       background-size: cover;
       background-position: center;
       display: flex;
@@ -63,383 +100,287 @@
       letter-spacing: .12em;
       text-transform: uppercase;
       font-size: .8rem;
-      transition: .3s ease;
     }
 
-    .button:hover {
-      background: rgba(255,255,255,.12);
-    }.collections {
-  padding: 7rem 8%;
-  background: #f7f2ea;
-}
+    .collections,
+    .featured-works {
+      padding: 7rem 8%;
+      background: #f7f2ea;
+      text-align: center;
+    }
 
-.section-intro {
-  max-width: 760px;
-  margin: 0 auto 3rem;
-  text-align: center;
-}
+    .eyebrow {
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      font-size: .8rem;
+      color: #5d6b57;
+    }
 
-.eyebrow {
-  letter-spacing: .24em;
-  text-transform: uppercase;
-  font-size: .8rem;
-  color: #5d6b57;
-}
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      font-weight: 400;
+      line-height: 1;
+    }
 
-.section-intro h2 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2.5rem, 6vw, 5rem);
-  font-weight: 400;
-  line-height: 1;
-  margin: 0;
-}
+    .collection-grid,
+    .art-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
 
-.collection-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
+    .collection-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
 
-.collection-grid article {
-  background: #fffaf3;
-  padding: 1rem;
-  border: 1px solid rgba(47,43,44,.12);
-  box-shadow: 0 20px 60px rgba(47,43,44,.08);
-}
+    .art-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
 
-.collection-grid img {
-  width: 100%;
-  height: 430px;
-  object-fit: cover;
-  display: block;
-}
+    article {
+      background: #fffaf3;
+      padding: 1rem;
+      border: 1px solid rgba(47,43,44,.12);
+      box-shadow: 0 20px 60px rgba(47,43,44,.08);
+    }
 
-.collection-grid h3 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2.2rem;
-  font-weight: 400;
-  margin: 1rem 0 .25rem;
-}
+    .collection-grid img,
+    .art-grid img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      display: block;
+    }
 
-.collection-grid p {
-  color: #5b5552;
-  line-height: 1.7;
-}
+    h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      font-weight: 400;
+    }
 
-@media (max-width: 850px) {
-  .collection-grid {
-    grid-template-columns: 1fr;
-  }
+    .poetry-interlude {
+      min-height: 70vh;
+      background-image:
+        linear-gradient(rgba(47,43,44,.55), rgba(47,43,44,.65)),
+        url('assets/artwork/cherry blossoms.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 8%;
+      text-align: center;
+    }
 
-  .collection-grid img {
-    height: auto;
-  }
-}.poetry-interlude {
-  min-height: 70vh;
-  background-image:
-    linear-gradient(rgba(47,43,44,.55), rgba(47,43,44,.65)),
-    url('assets/artwork/cherry blossoms.jpg');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 4rem 8%;
-}
+    .poem-text {
+      max-width: 760px;
+      color: white;
+    }
 
-.poem-text {
-  max-width: 760px;
-  color: white;
-  text-align: center;
-}
+    .poem-text p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 5vw, 4.2rem);
+      line-height: 1.15;
+    }
 
-.poem-text p {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2rem, 5vw, 4.2rem);
-  line-height: 1.15;
-  margin-bottom: 1.5rem;
-}
+    .about-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 90vh;
+    }
 
-.poem-text span {
-  letter-spacing: .18em;
-  text-transform: uppercase;
-  font-size: .78rem;
-  opacity: .85;
-}.about-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 90vh;
-}
+    .about-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
 
-.about-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
+    .about-text {
+      padding: 6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #fffaf3;
+    }
 
-.about-text {
-  padding: 6rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #fffaf3;
-}
+    .about-text p {
+      line-height: 1.9;
+      color: #5a5552;
+    }
 
-.about-text h2 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2.5rem, 5vw, 4.8rem);
-  font-weight: 400;
-  line-height: 1;
-  margin-bottom: 2rem;
-}
+    .newsletter {
+      padding: 7rem 8%;
+      background: #2f2b2c;
+      color: white;
+      text-align: center;
+    }
 
-.about-text p {
-  line-height: 1.9;
-  color: #5a5552;
-  margin-bottom: 1.5rem;
-}
+    .newsletter h2 {
+      color: white;
+    }
 
-@media (max-width: 850px) {
-  .about-section {
-    grid-template-columns: 1fr;
-  }
+    .newsletter-form {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
-  .about-text {
-    padding: 3rem 2rem;
-  }<section class="featured-works">
-  <p class="eyebrow">Featured Works</p>
-  <h2>A closer look into The Gentle Wild.</h2>
+    .newsletter-form input {
+      padding: 1rem;
+      min-width: 300px;
+    }
 
-  <div class="art-grid">
-    <img src="assets/artwork/moonlight fox.jpg" alt="Moonlit fox painting">
-    <img src="assets/artwork/northern lights wolf.jpg" alt="Wolf and woman painting">
-    <img src="assets/artwork/butterfly flowers.png" alt="Butterflies and flowers painting">
-    <img src="assets/artwork/wolf warrior.jpg" alt="Warrior woman with wolf painting">
-  </div>
-</section>
-}.newsletter {
-  padding: 7rem 8%;
-  background: #2f2b2c;
-  color: white;
-  text-align: center;
-}
+    .newsletter-form button {
+      padding: 1rem 2rem;
+      background: transparent;
+      color: white;
+      border: 1px solid rgba(255,255,255,.5);
+    }
 
-.newsletter-content {
-  max-width: 760px;
-  margin: 0 auto;
-}
+    .footer {
+      padding: 2rem;
+      text-align: center;
+      background: #211f1f;
+      color: rgba(255,255,255,.65);
+    }
 
-.newsletter h2 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2.2rem, 5vw, 4.5rem);
-  font-weight: 400;
-  line-height: 1.1;
-  margin-bottom: 2rem;
-}
+    @media (max-width: 850px) {
+      .collection-grid,
+      .art-grid,
+      .about-section {
+        grid-template-columns: 1fr;
+      }
 
-.newsletter-form {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+      .nav {
+        position: absolute;
+        flex-direction: column;
+        gap: 1rem;
+      }
 
-.newsletter-form input {
-  padding: 1rem 1.2rem;
-  min-width: 300px;
-  border: none;
-  background: rgba(255,255,255,.1);
-  color: white;
-}
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
 
-.newsletter-form button {
-  padding: 1rem 2rem;
-  border: 1px solid rgba(255,255,255,.4);
-  background: transparent;
-  color: white;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.footer {
-  padding: 2rem;
-  text-align: center;
-  background: #211f1f;
-  color: rgba(255,255,255,.65);
-}.logo img {
-  height: 72px;
-  width: auto;
-  display: block;
-  filter: brightness(0) invert(1);
-}
-}.featured-works {
-  padding: 7rem 8%;
-  background: #f7f2ea;
-  text-align: center;
-}
-
-.featured-works h2 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2.5rem, 5vw, 4.8rem);
-  font-weight: 400;
-  margin-bottom: 3rem;
-}
-
-.art-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.2rem;
-}
-
-.art-grid img {
-  width: 100%;
-  height: 360px;
-  object-fit: cover;
-  display: block;
-  box-shadow: 0 18px 50px rgba(47,43,44,.15);
-}
-
-@media (max-width: 900px) {
-  .art-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 600px) {
-  .art-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .art-grid img {
-    height: auto;
-  }
-}
+      h1 {
+        font-size: 3.5rem;
+      }
+    }
   </style>
 </head>
-<section class="poetry-interlude">
-  <div class="poem-text">
-    <p>
-      “Each stroke is a decision,<br>
-      each color a memory of light,<br>
-      each shadow a knowing<br>
-      that darkness is never empty.”
-    </p>
-    <span>— from Lisa’s poetry archive</span>
-  </div>
-</section><section class="about-section">
 
-  <div class="about-image">
-    <img src="assets/artwork/bees and flowers.jpg" alt="Bee garden painting">
-  </div>
-
-  <div class="about-text">
-
-    <p class="eyebrow">About Lisa</p>
-
-    <h2>Painter, poet, observer of the gentle wild.</h2>
-
-    <p>
-      Lisa Trexler-Fallon creates paintings and poems shaped by moonlight,
-      tenderness, memory, myth, and the emotional language of nature.
-    </p>
-
-    <p>
-      Her work explores the connection between wilderness and softness —
-      where animals become mirrors, flowers become memory,
-      and beauty becomes a quiet act of courage.
-    </p>
-
-  </div>
-
-</section><section class="newsletter">
-
-  <div class="newsletter-content">
-
-    <p class="eyebrow">Join The Gentle Wild</p>
-
-    <h2>
-      Receive new poems, paintings,
-      print releases, and quiet things from the woods.
-    </h2>
-
-    <form class="newsletter-form">
-
-      <input type="email" placeholder="Your email address">
-
-      <button type="submit">
-        Subscribe
-      </button>
-
-    </form>
-
-  </div>
-
-</section>
-
-<footer class="footer">
-
-  <p>
-    © The Gentle Wild — Lisa Trexler-Fallon
-  </p>
-
-</footer>
 <body>
 
-<nav class="nav">
-  <div class="logo">
-  <img src="assets/logo/gentle-wild-logo.png" alt="The Gentle Wild logo">
-</div>
+  <nav class="nav">
+    <div class="logo">
+      <img src="assets/logo/gentle-wild-logo.png" alt="The Gentle Wild logo">
+    </div>
 
-  <div class="nav-links">
-    <a href="#">Gallery</a>
-    <a href="#">Poetry</a>
-    <a href="#">Collections</a>
-    <a href="#">About</a>
-  </div>
-</nav>
+    <div class="nav-links">
+      <a href="#gallery">Gallery</a>
+      <a href="#poetry">Poetry</a>
+      <a href="#collections">Collections</a>
+      <a href="#about">About</a>
+    </div>
+  </nav>
 
-<section class="hero">
-  <div class="hero-content">
+  <section class="hero">
+    <div class="hero-content">
+      <h1>The Gentle Wild</h1>
+      <p class="subtitle">
+        Art and poetry inspired by wilderness, tenderness, memory, moonlight,
+        and the quiet language of the natural world.
+      </p>
+      <a href="#gallery" class="button">Enter the Gallery</a>
+    </div>
+  </section>
 
-    <h1>The Gentle Wild</h1>
-
-    <p class="subtitle">
-      Art and poetry inspired by wilderness,
-      tenderness, memory, moonlight,
-      and the quiet language of the natural world.
-    </p>
-
-    <a href="#" class="button">Enter the Gallery</a>
-
-  </div>
-</section>
-<section class="collections">
-  <div class="section-intro">
+  <section class="collections" id="collections">
     <p class="eyebrow">Collections</p>
     <h2>Paintings gathered by mood, myth, and memory.</h2>
-  </div>
 
-  <div class="collection-grid">
-    <article>
-      <img src="assets/artwork/split.jpg" alt="Woman and wolf duality painting">
-      <h3>Wild Souls</h3>
-      <p>Wolves, foxes, guardians, and the animal spirit within.</p>
-    </article>
+    <div class="collection-grid">
+      <article>
+        <img src="assets/artwork/split.jpg" alt="Woman and wolf duality painting">
+        <h3>Wild Souls</h3>
+        <p>Wolves, foxes, guardians, and the animal spirit within.</p>
+      </article>
 
-    <article>
-      <img src="assets/artwork/cherry blossoms.jpg" alt="Cherry blossoms by water">
-      <h3>Moon Garden</h3>
-      <p>Flowers, moonlight, bees, butterflies, and quiet wonder.</p>
-    </article>
+      <article>
+        <img src="assets/artwork/cherry blossoms.jpg" alt="Cherry blossoms by water">
+        <h3>Moon Garden</h3>
+        <p>Flowers, moonlight, bees, butterflies, and quiet wonder.</p>
+      </article>
 
-    <article>
-      <img src="assets/artwork/dancers.jpg" alt="Romantic masked dancers painting">
-      <h3>Myth & Memory</h3>
-      <p>Romance, fantasy, transformation, and emotional story.</p>
-    </article>
-  </div>
-</section>
+      <article>
+        <img src="assets/artwork/dancers.jpg" alt="Romantic masked dancers painting">
+        <h3>Myth & Memory</h3>
+        <p>Romance, fantasy, transformation, and emotional story.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="poetry-interlude" id="poetry">
+    <div class="poem-text">
+      <p>
+        “Each stroke is a decision,<br>
+        each color a memory of light,<br>
+        each shadow a knowing<br>
+        that darkness is never empty.”
+      </p>
+      <span>— from Lisa’s poetry archive</span>
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="about-image">
+      <img src="assets/artwork/bees and flowers.jpg" alt="Bee garden painting">
+    </div>
+
+    <div class="about-text">
+      <p class="eyebrow">About Lisa</p>
+      <h2>Painter, poet, observer of the gentle wild.</h2>
+      <p>
+        Lisa Trexler-Fallon creates paintings and poems shaped by moonlight,
+        tenderness, memory, myth, and the emotional language of nature.
+      </p>
+      <p>
+        Her work explores the connection between wilderness and softness —
+        where animals become mirrors, flowers become memory,
+        and beauty becomes a quiet act of courage.
+      </p>
+    </div>
+  </section>
+
+  <section class="featured-works" id="gallery">
+    <p class="eyebrow">Featured Works</p>
+    <h2>A closer look into The Gentle Wild.</h2>
+
+    <div class="art-grid">
+      <img src="assets/artwork/moonlight fox.jpg" alt="Moonlit fox painting">
+      <img src="assets/artwork/northern lights wolf.jpg" alt="Northern lights wolf painting">
+      <img src="assets/artwork/butterfly flowers.png" alt="Butterflies and flowers painting">
+      <img src="assets/artwork/wolf warrior.jpg" alt="Warrior woman with wolf painting">
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="newsletter-content">
+      <p class="eyebrow">Join The Gentle Wild</p>
+      <h2>Receive new poems, paintings, print releases, and quiet things from the woods.</h2>
+
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© The Gentle Wild — Lisa Trexler-Fallon</p>
+  </footer>
+
 </body>
 </html>
