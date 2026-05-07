@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Poetry | The Gentle Wild</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+
+    body {
+      margin: 0;
+      background: #f7f2ea;
+      color: #2f2b2c;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .nav {
+      padding: 1.5rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #211f1f;
+    }
+
+    .logo {
+      color: white;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      letter-spacing: .12em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-size: .8rem;
+    }
+
+    .poetry-hero {
+      padding: 8rem 8% 5rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(4rem, 8vw, 7rem);
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+
+    .intro {
+      max-width: 760px;
+      margin: 0 auto;
+      line-height: 1.9;
+      color: #5a5552;
+    }
+
+    .poem-section {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 5rem 8%;
+    }
+
+    .poem-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .poem {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      line-height: 1.5;
+      text-align: center;
+      color: #3b3634;
+    }
+
+    .divider {
+      width: 120px;
+      height: 1px;
+      background: rgba(47,43,44,.2);
+      margin: 5rem auto;
+    }
+
+    .poem-image {
+      width: 100%;
+      margin-top: 3rem;
+      box-shadow: 0 20px 60px rgba(47,43,44,.15);
+    }
+
+    .footer {
+      padding: 2rem;
+      text-align: center;
+      background: #211f1f;
+      color: rgba(255,255,255,.65);
+    }
+
+    @media (max-width: 850px) {
+
+      .nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .poem {
+        font-size: 1.5rem;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav">
+
+    <div class="logo">
+      The Gentle Wild
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="#">About</a>
+    </div>
+
+  </nav>
+
+  <section class="poetry-hero">
+
+    <h1>Poetry</h1>
+
+    <p class="intro">
+      Poems gathered from moonlight, wilderness,
+      tenderness, grief, longing,
+      and the sacred emotional language of the natural world.
+    </p>
+
+  </section>
+
+  <section class="poem-section">
+
+    <h2 class="poem-title">
+      Invisible Chains
+    </h2>
+
+    <div class="poem">
+
+      “Each shadow remembers<br>
+      the shape of its sorrow.<br><br>
+
+      Each silence carries<br>
+      the ghost of a name.<br><br>
+
+      We were never truly free,<br>
+      only beautifully tethered<br>
+      to the things we could not release.”
+
+
+    </div>
+
+    <img class="poem-image"
+      src="assets/artwork/cherry blossoms.jpg"
+      alt="Cherry blossoms painting">
+
+    <div class="divider"></div>
+
+  </section>
+
+  <footer class="footer">
+    © The Gentle Wild — Lisa Trexler-Fallon
+  </footer>
+
+</body>
+</html>
