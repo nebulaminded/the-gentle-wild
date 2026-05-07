@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | The Gentle Wild</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    body { margin: 0; background: #f7f2ea; color: #2f2b2c; font-family: Inter, sans-serif; line-height: 1.8; }
+    .nav { padding: 1.5rem 3rem; display: flex; justify-content: space-between; align-items: center; background: #211f1f; }
+    .logo { color: white; font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; letter-spacing: .12em; }
+    .nav-links { display: flex; gap: 2rem; }
+    .nav-links a { color: white; text-decoration: none; letter-spacing: .12em; text-transform: uppercase; font-size: .8rem; }
+
+    .hero { padding: 8rem 8% 4rem; text-align: center; }
+    h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 400; }
+    h1 { font-size: clamp(4rem, 8vw, 7rem); margin-bottom: 1rem; }
+    .intro { max-width: 760px; margin: auto; color: #5a5552; }
+
+    .shop-grid { padding: 2rem 8% 8rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .product { background: #fffaf3; padding: 1rem; box-shadow: 0 20px 60px rgba(47,43,44,.08); border: 1px solid rgba(47,43,44,.12); }
+    .product img { width: 100%; height: 360px; object-fit: cover; display: block; }
+    .product h2 { font-size: 2.4rem; margin: 1rem 0 .25rem; }
+    .price { color: #5d6b57; font-weight: 600; letter-spacing: .05em; }
+    .button { display: inline-block; margin-top: 1rem; padding: .85rem 1.3rem; background: #2f2b2c; color: white; text-decoration: none; letter-spacing: .1em; text-transform: uppercase; font-size: .75rem; }
+
+    .note { max-width: 850px; margin: 0 auto 7rem; padding: 3rem; background: #fffaf3; text-align: center; box-shadow: 0 20px 60px rgba(47,43,44,.08); }
+
+    .footer { padding: 2rem; text-align: center; background: #211f1f; color: rgba(255,255,255,.65); }
+
+    @media (max-width: 900px) {
+      .shop-grid { grid-template-columns: 1fr; }
+      .nav { flex-direction: column; gap: .75rem; padding: 1.25rem 1rem; text-align: center; }
+      .nav-links { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+      h1 { line-height: .95; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="logo">The Gentle Wild</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="poetry.html">Poetry</a>
+      <a href="collections.html">Collections</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Shop Prints</h1>
+    <p class="intro">
+      Fine art prints, poetry cards, and canvas editions from The Gentle Wild.
+      This shop is beginning as a curated preview while print fulfillment is prepared.
+    </p>
+  </section>
+
+  <section class="shop-grid">
+    <article class="product">
+      <img src="assets/artwork/moonlight fox.jpg" alt="Moonlight Fox print">
+      <h2>Moonlight Fox</h2>
+      <p>A quiet guardian beneath the moon — available soon as an archival fine art print.</p>
+      <p class="price">Coming Soon</p>
+      <a class="button" href="contact.html">Inquire</a>
+    </article>
+
+    <article class="product">
+      <img src="assets/artwork/split.jpg" alt="Wild Souls print">
+      <h2>Wild Souls</h2>
+      <p>A portrait of instinct, tenderness, and the animal spirit within.</p>
+      <p class="price">Coming Soon</p>
+      <a class="button" href="contact.html">Inquire</a>
+    </article>
+
+    <article class="product">
+      <img src="assets/artwork/cherry blossoms.jpg" alt="Cherry Blossoms print">
+      <h2>Moon Garden</h2>
+      <p>Soft blossoms, still water, and the quiet beauty of renewal.</p>
+      <p class="price">Coming Soon</p>
+      <a class="button" href="contact.html">Inquire</a>
+    </article>
+  </section>
+
+  <section class="note">
+    <h2>Print fulfillment coming soon</h2>
+    <p>
+      The Gentle Wild will begin with a small curated release of prints and poetry cards.
+      Until checkout is connected, inquiries are welcome through the contact page.
+    </p>
+  </section>
+
+  <footer class="footer">
+    © The Gentle Wild — Lisa Trexler-Fallon
+  </footer>
+</body>
+</html>
