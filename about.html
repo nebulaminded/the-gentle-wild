@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About | The Gentle Wild</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+
+    body {
+      margin: 0;
+      background: #f7f2ea;
+      color: #2f2b2c;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.9;
+    }
+
+    .nav {
+      padding: 1.5rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #211f1f;
+    }
+
+    .logo {
+      color: white;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      letter-spacing: .12em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-size: .8rem;
+    }
+
+    .about-hero {
+      padding: 8rem 8% 5rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(4rem, 8vw, 7rem);
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+
+    .intro {
+      max-width: 760px;
+      margin: 0 auto;
+      color: #5a5552;
+    }
+
+    .artist-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      padding: 0 8% 8rem;
+      align-items: center;
+    }
+
+    .artist-section img {
+      width: 100%;
+      display: block;
+      box-shadow: 0 20px 60px rgba(47,43,44,.15);
+    }
+
+    .artist-text h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3rem;
+      font-weight: 400;
+    }
+
+    .footer {
+      padding: 2rem;
+      text-align: center;
+      background: #211f1f;
+      color: rgba(255,255,255,.65);
+    }
+
+    @media (max-width: 850px) {
+
+      .artist-section {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav">
+
+    <div class="logo">
+      The Gentle Wild
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="poetry.html">Poetry</a>
+    </div>
+
+  </nav>
+
+  <section class="about-hero">
+
+    <h1>About Lisa</h1>
+
+    <p class="intro">
+      Painter, poet, observer of wilderness,
+      tenderness, memory, moonlight,
+      and the emotional language hidden quietly within the natural world.
+    </p>
+
+  </section>
+
+  <section class="artist-section">
+
+    <img src="assets/artwork/bees and flowers.jpg" alt="Artwork by Lisa Trexler-Fallon">
+
+    <div class="artist-text">
+
+      <h2>The Gentle Wild</h2>
+
+      <p>
+        Lisa Trexler-Fallon creates paintings and poems that live between softness and strength —
+        where animals become mirrors, flowers become memory,
+        and beauty becomes a quiet act of courage.
+      </p>
+
+      <p>
+        Her work draws deeply from nature, mythology, tenderness, grief, longing,
+        romance, and the sacred emotional atmosphere found in moonlight,
+        wilderness, and stillness.
+      </p>
+
+      <p>
+        Through image and language,
+        The Gentle Wild invites viewers into a world where softness is not weakness,
+        and where the natural world becomes a place of emotional remembrance.
+      </p>
+
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    © The Gentle Wild — Lisa Trexler-Fallon
+  </footer>
+
+</body>
+</html>
