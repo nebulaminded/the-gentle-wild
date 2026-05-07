@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gallery | The Gentle Wild</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+
+    body {
+      margin: 0;
+      background: #f7f2ea;
+      color: #2f2b2c;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .nav {
+      padding: 1.5rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #211f1f;
+    }
+
+    .logo {
+      color: white;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      letter-spacing: .12em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-size: .8rem;
+    }
+
+    .gallery-hero {
+      padding: 8rem 8% 5rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(4rem, 8vw, 7rem);
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+
+    .intro {
+      max-width: 760px;
+      margin: 0 auto;
+      line-height: 1.9;
+      color: #5a5552;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      padding: 0 8% 8rem;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      box-shadow: 0 20px 60px rgba(47,43,44,.15);
+    }
+
+    .footer {
+      padding: 2rem;
+      text-align: center;
+      background: #211f1f;
+      color: rgba(255,255,255,.65);
+    }
+
+    @media (max-width: 850px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav">
+
+    <div class="logo">
+      The Gentle Wild
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#">Poetry</a>
+      <a href="#">About</a>
+    </div>
+
+  </nav>
+
+  <section class="gallery-hero">
+
+    <h1>Gallery</h1>
+
+    <p class="intro">
+      A collection of paintings shaped by wilderness,
+      myth, tenderness, memory, moonlight,
+      and the quiet emotional language of nature.
+    </p>
+
+  </section>
+
+  <section class="gallery-grid">
+
+    <img src="assets/artwork/moonlight fox.jpg" alt="">
+    <img src="assets/artwork/split.jpg" alt="">
+    <img src="assets/artwork/cherry blossoms.jpg" alt="">
+    <img src="assets/artwork/dancers.jpg" alt="">
+    <img src="assets/artwork/northern lights wolf.jpg" alt="">
+    <img src="assets/artwork/bees and flowers.jpg" alt="">
+
+  </section>
+
+  <footer class="footer">
+    © The Gentle Wild — Lisa Trexler-Fallon
+  </footer>
+
+</body>
+</html>
