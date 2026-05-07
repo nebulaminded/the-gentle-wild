@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collections | The Gentle Wild</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    body { margin: 0; background: #f7f2ea; color: #2f2b2c; font-family: Inter, sans-serif; }
+    .nav { padding: 1.5rem 3rem; display: flex; justify-content: space-between; align-items: center; background: #211f1f; }
+    .logo { color: white; font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; letter-spacing: .12em; }
+    .nav-links { display: flex; gap: 2rem; }
+    .nav-links a { color: white; text-decoration: none; letter-spacing: .12em; text-transform: uppercase; font-size: .8rem; }
+
+    .hero { padding: 8rem 8% 4rem; text-align: center; }
+    h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 400; }
+    h1 { font-size: clamp(4rem, 8vw, 7rem); margin: 0 0 1rem; }
+    .intro { max-width: 760px; margin: auto; line-height: 1.9; color: #5a5552; }
+
+    .collections { padding: 2rem 8% 8rem; display: grid; gap: 4rem; }
+    .collection { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; background: #fffaf3; padding: 1.5rem; box-shadow: 0 20px 60px rgba(47,43,44,.1); }
+    .collection img { width: 100%; height: 460px; object-fit: cover; display: block; }
+    .collection h2 { font-size: 3.5rem; margin-bottom: 1rem; }
+    .collection p { line-height: 1.8; color: #5a5552; }
+
+    .footer { padding: 2rem; text-align: center; background: #211f1f; color: rgba(255,255,255,.65); }
+
+    @media (max-width: 850px) {
+      .collection { grid-template-columns: 1fr; }
+      .nav { flex-direction: column; gap: .75rem; padding: 1.25rem 1rem; text-align: center; }
+      .nav-links { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+      h1 { line-height: .95; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="logo">The Gentle Wild</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="poetry.html">Poetry</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Collections</h1>
+    <p class="intro">
+      Paintings gathered into emotional worlds — animal guardians, moonlit gardens,
+      romantic myth, and the quiet wilderness of memory.
+    </p>
+  </section>
+
+  <section class="collections">
+    <article class="collection">
+      <img src="assets/artwork/split.jpg" alt="Woman and wolf duality painting">
+      <div>
+        <h2>Wild Souls</h2>
+        <p>Wolves, foxes, guardians, and animal spirits. A collection about instinct, protection, transformation, and the wilderness within.</p>
+      </div>
+    </article>
+
+    <article class="collection">
+      <img src="assets/artwork/cherry blossoms.jpg" alt="Cherry blossoms painting">
+      <div>
+        <h2>Moon Garden</h2>
+        <p>Blossoms, bees, butterflies, moonlight, and soft natural wonder. A collection rooted in tenderness, renewal, and quiet beauty.</p>
+      </div>
+    </article>
+
+    <article class="collection">
+      <img src="assets/artwork/dancers.jpg" alt="Romantic masked dancers painting">
+      <div>
+        <h2>Myth & Memory</h2>
+        <p>Romance, fantasy, theatrical emotion, and storytelling. A collection shaped by longing, mystery, and the dreamlike spaces between worlds.</p>
+      </div>
+    </article>
+  </section>
+
+  <footer class="footer">
+    © The Gentle Wild — Lisa Trexler-Fallon
+  </footer>
+</body>
+</html>
