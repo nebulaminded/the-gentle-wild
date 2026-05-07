@@ -78,7 +78,11 @@ section {
     .hero {
       height: 100vh;
       background-image:
-        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.45)),
+        background-image:
+  linear-gradient(
+    rgba(8,8,8,.25),
+    rgba(20,16,18,.55)
+  ),
         url('assets/artwork/moonlight fox.jpg');
       background-size: cover;
       background-position: center;
@@ -90,9 +94,10 @@ section {
     }
 
     .hero-content {
-      max-width: 800px;
-      color: white;
-    }
+  max-width: 800px;
+  color: white;
+  text-shadow: 0 4px 30px rgba(0,0,0,.35);
+}
 
     h1 {
       font-family: 'Cormorant Garamond', serif;
@@ -122,7 +127,7 @@ section {
 
     .collections,
     .featured-works {
-      padding: 7rem 8%;
+      padding: 9rem 8%;
       background: #f7f2ea;
       text-align: center;
     }
@@ -163,12 +168,27 @@ section {
     }
 
     .collection-grid img,
-    .art-grid img {
-      width: 100%;
-      height: 360px;
-      object-fit: cover;
-      display: block;
-    }
+.art-grid img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+
+  transition:
+    transform .5s ease,
+    box-shadow .5s ease;
+
+  box-shadow:
+    0 20px 60px rgba(47,43,44,.15);
+}
+
+.collection-grid img:hover,
+.art-grid img:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 28px 80px rgba(47,43,44,.18);
+}
 
     h3 {
       font-family: 'Cormorant Garamond', serif;
