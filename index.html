@@ -57,13 +57,11 @@
       z-index: 10;
     }
 
-    .logo {
-      color: white;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.8rem;
-      letter-spacing: .12em;
-      text-shadow: 0 2px 20px rgba(0,0,0,.45);
-    }
+    .logo img {
+  height: 90px;
+  width: auto;
+  display: block;
+}
 
     .nav-links {
       display: flex;
@@ -352,7 +350,9 @@
       .art-grid,
       .about-section {
         grid-template-columns: 1fr;
-      }
+      .logo img {
+  height: 70px;
+}
 
       .collections,
       .featured-works {
@@ -389,8 +389,8 @@
   <nav class="nav">
 
     <div class="logo">
-      The Gentle Wild
-    </div>
+  <img src="assets/logo/the Gentle Wild logo.png" alt="The Gentle Wild logo">
+</div>
 
     <div class="nav-links">
       <a href="gallery.html">Gallery</a>
