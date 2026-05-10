@@ -3,48 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>The Gentle Wild | Poetry, Nature, and Imagination</title>
-
-  <meta name="description" content="The Gentle Wild is a poetic, nature-inspired creative space by Lisa Trexler-Fallon, featuring art, poetry, collections, and gentle reflections from the wild.">
-
-  <meta name="author" content="Lisa Trexler-Fallon">
-
-  <meta property="og:title" content="The Gentle Wild">
-  <meta property="og:description" content="Poetry, nature, imagination, and gentle creative works by Lisa Trexler-Fallon.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://nebulaminded.github.io/the-gentle-wild/">
-  <meta property="og:image" content="https://nebulaminded.github.io/the-gentle-wild/assets/artwork/moonlight%20fox.jpg">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="The Gentle Wild">
-  <meta name="twitter:description" content="Poetry, nature, imagination, and gentle creative works by Lisa Trexler-Fallon.">
-  <meta name="twitter:image" content="https://nebulaminded.github.io/the-gentle-wild/assets/artwork/moonlight%20fox.jpg">
+  <title>The Gentle Wild | Lisa Trexler-Fallon</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
       background: #f7f2ea;
       color: #2f2b2c;
       font-family: 'Inter', sans-serif;
-    }
-
-    img {
-      max-width: 100%;
     }
 
     .nav {
@@ -76,11 +47,6 @@
       letter-spacing: .12em;
       text-transform: uppercase;
       font-size: .8rem;
-      transition: opacity .3s ease;
-    }
-
-    .nav-links a:hover {
-      opacity: .72;
     }
 
     section {
@@ -88,31 +54,20 @@
     }
 
     @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(18px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .hero {
-      min-height: 100vh;
-
+      height: 100vh;
       background-image:
         linear-gradient(rgba(8,8,8,.55), rgba(20,16,18,.75)),
         url('assets/artwork/moonlight fox.jpg');
-
       background-size: cover;
       background-position: center;
-
       display: flex;
       align-items: center;
       justify-content: center;
-
       text-align: center;
       padding: 2rem;
     }
@@ -125,7 +80,7 @@
 
     h1 {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(3.5rem, 10vw, 5rem);
+      font-size: 5rem;
       font-weight: 400;
       letter-spacing: .08em;
       margin-bottom: 1rem;
@@ -141,21 +96,12 @@
       display: inline-block;
       margin-top: 2rem;
       padding: 1rem 2rem;
-
       border: 1px solid rgba(255,255,255,.6);
-
       color: white;
       text-decoration: none;
       letter-spacing: .12em;
       text-transform: uppercase;
       font-size: .8rem;
-
-      transition: background .3s ease, transform .3s ease;
-    }
-
-    .button:hover {
-      background: rgba(255,255,255,.12);
-      transform: translateY(-2px);
     }
 
     .collections,
@@ -185,20 +131,13 @@
       gap: 1.5rem;
     }
 
-    .collection-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .art-grid {
-      grid-template-columns: repeat(4, 1fr);
-    }
+    .collection-grid { grid-template-columns: repeat(3, 1fr); }
+    .art-grid { grid-template-columns: repeat(4, 1fr); }
 
     article {
       background: #fffaf3;
       padding: 1rem;
-
       border: 1px solid rgba(47,43,44,.12);
-
       box-shadow: 0 20px 60px rgba(47,43,44,.08);
     }
 
@@ -207,18 +146,14 @@
       width: 100%;
       height: 360px;
       object-fit: cover;
-
       display: block;
-
       transition: transform .5s ease, box-shadow .5s ease;
-
       box-shadow: 0 20px 60px rgba(47,43,44,.15);
     }
 
     .collection-grid img:hover,
     .art-grid img:hover {
       transform: translateY(-6px);
-
       box-shadow: 0 28px 80px rgba(47,43,44,.18);
     }
 
@@ -230,18 +165,14 @@
 
     .poetry-interlude {
       min-height: 70vh;
-
       background-image:
         linear-gradient(rgba(47,43,44,.55), rgba(47,43,44,.65)),
         url('assets/artwork/cherry blossoms.jpg');
-
       background-size: cover;
       background-position: center;
-
       display: flex;
       align-items: center;
       justify-content: center;
-
       padding: 4rem 8%;
       text-align: center;
     }
@@ -272,11 +203,9 @@
 
     .about-text {
       padding: 6rem;
-
       display: flex;
       flex-direction: column;
       justify-content: center;
-
       background: #fffaf3;
     }
 
@@ -292,9 +221,7 @@
       text-align: center;
     }
 
-    .newsletter h2 {
-      color: white;
-    }
+    .newsletter h2 { color: white; }
 
     .newsletter-form {
       display: flex;
@@ -306,28 +233,13 @@
     .newsletter-form input {
       padding: 1rem;
       min-width: 300px;
-      border: 0;
-      font: inherit;
     }
 
     .newsletter-form button {
       padding: 1rem 2rem;
-
       background: transparent;
       color: white;
-
       border: 1px solid rgba(255,255,255,.5);
-
-      cursor: pointer;
-
-      letter-spacing: .12em;
-      text-transform: uppercase;
-
-      transition: background .3s ease;
-    }
-
-    .newsletter-form button:hover {
-      background: rgba(255,255,255,.12);
     }
 
     .footer {
@@ -342,25 +254,13 @@
       text-decoration: none;
     }
 
-    .footer a:hover {
-      color: white;
-    }
+    .footer a:hover { color: white; }
 
     @media (max-width: 850px) {
-
       .collection-grid,
       .art-grid,
       .about-section {
         grid-template-columns: 1fr;
-      }
-
-      .collections,
-      .featured-works {
-        padding: 6rem 6%;
-      }
-
-      .about-text {
-        padding: 4rem 2rem;
       }
 
       .nav {
@@ -377,20 +277,17 @@
       }
 
       h1 {
+        font-size: 3.5rem;
         line-height: .95;
       }
     }
-
   </style>
 </head>
 
 <body>
 
   <nav class="nav">
-
-    <div class="logo">
-      The Gentle Wild
-    </div>
+    <div class="logo">The Gentle Wild</div>
 
     <div class="nav-links">
       <a href="gallery.html">Gallery</a>
@@ -399,179 +296,107 @@
       <a href="shop.html">Shop</a>
       <a href="#about">About</a>
     </div>
-
   </nav>
 
   <section class="hero">
-
     <div class="hero-content">
-
       <h1>The Gentle Wild</h1>
-
       <p class="subtitle">
-        Art and poetry inspired by wilderness, tenderness, memory,
-        moonlight, and the quiet language of the natural world.
+        Art and poetry inspired by wilderness, tenderness, memory, moonlight,
+        and the quiet language of the natural world.
       </p>
-
-      <a href="#gallery" class="button">
-        Enter the Gallery
-      </a>
-
+      <a href="#gallery" class="button">Enter the Gallery</a>
     </div>
-
   </section>
 
   <section class="collections" id="collections">
-
     <p class="eyebrow">Collections</p>
-
-    <h2>
-      Paintings gathered by mood, myth, and memory.
-    </h2>
+    <h2>Paintings gathered by mood, myth, and memory.</h2>
 
     <div class="collection-grid">
-
       <article>
         <img src="assets/artwork/split.jpg" alt="Woman and wolf duality painting">
-
         <h3>Wild Souls</h3>
-
-        <p>
-          Wolves, foxes, guardians, and the animal spirit within.
-        </p>
+        <p>Wolves, foxes, guardians, and the animal spirit within.</p>
       </article>
 
       <article>
         <img src="assets/artwork/cherry blossoms.jpg" alt="Cherry blossoms by water">
-
         <h3>Moon Garden</h3>
-
-        <p>
-          Flowers, moonlight, bees, butterflies, and quiet wonder.
-        </p>
+        <p>Flowers, moonlight, bees, butterflies, and quiet wonder.</p>
       </article>
 
       <article>
         <img src="assets/artwork/dancers.jpg" alt="Romantic masked dancers painting">
-
         <h3>Myth & Memory</h3>
-
-        <p>
-          Romance, fantasy, transformation, and emotional story.
-        </p>
+        <p>Romance, fantasy, transformation, and emotional story.</p>
       </article>
-
     </div>
-
   </section>
 
   <section class="poetry-interlude" id="poetry">
-
     <div class="poem-text">
-
       <p>
         “Each stroke is a decision,<br>
         each color a memory of light,<br>
         each shadow a knowing<br>
         that darkness is never empty.”
       </p>
-
       <span>— from Lisa’s poetry archive</span>
-
     </div>
-
   </section>
 
   <section class="about-section" id="about">
-
     <div class="about-image">
       <img src="assets/artwork/bees and flowers.jpg" alt="Bee garden painting">
     </div>
 
     <div class="about-text">
-
       <p class="eyebrow">About Lisa</p>
-
-      <h2>
-        Painter, poet, observer of the gentle wild.
-      </h2>
-
+      <h2>Painter, poet, observer of the gentle wild.</h2>
       <p>
         Lisa Trexler-Fallon creates paintings and poems shaped by moonlight,
         tenderness, memory, myth, and the emotional language of nature.
       </p>
-
       <p>
         Her work explores the connection between wilderness and softness —
         where animals become mirrors, flowers become memory,
         and beauty becomes a quiet act of courage.
       </p>
-
     </div>
-
   </section>
 
   <section class="featured-works" id="gallery">
-
     <p class="eyebrow">Featured Works</p>
-
-    <h2>
-      A closer look into The Gentle Wild.
-    </h2>
+    <h2>A closer look into The Gentle Wild.</h2>
 
     <div class="art-grid">
-
       <img src="assets/artwork/moonlight fox.jpg" alt="Moonlit fox painting">
-
       <img src="assets/artwork/northern lights wolf.jpg" alt="Northern lights wolf painting">
-
       <img src="assets/artwork/butterfly flowers.png" alt="Butterflies and flowers painting">
-
       <img src="assets/artwork/wolf warrior.jpg" alt="Warrior woman with wolf painting">
-
     </div>
-
   </section>
 
   <section class="newsletter">
-
     <div class="newsletter-content">
-
-      <p class="eyebrow">
-        Join The Gentle Wild
-      </p>
-
-      <h2>
-        Receive new poems, paintings, print releases,
-        and quiet things from the woods.
-      </h2>
+      <p class="eyebrow">Join The Gentle Wild</p>
+      <h2>Receive new poems, paintings, print releases, and quiet things from the woods.</h2>
 
       <form class="newsletter-form">
-
         <input type="email" placeholder="Your email address">
-
-        <button type="submit">
-          Subscribe
-        </button>
-
+        <button type="submit">Subscribe</button>
       </form>
-
     </div>
-
   </section>
 
   <footer class="footer">
-
-    <p>
-      © The Gentle Wild — Lisa Trexler-Fallon
-    </p>
-
+    <p>© The Gentle Wild — Lisa Trexler-Fallon</p>
     <p>
       <a href="#">Instagram</a> ·
       <a href="#">Pinterest</a> ·
       <a href="contact.html">Contact</a>
     </p>
-
   </footer>
 
 </body>
